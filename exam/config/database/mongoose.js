@@ -2,11 +2,6 @@ const mongoose = require("mongoose");
 const fs = require("fs");
 const path = require("path");
 const env = require("../../env");
-const { fileURLToPath } = require("url");
-const { dirname } = require("path");
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 const clusterUrl = `mongodb://${env.mongoose.username}:${
   env.mongoose.password
